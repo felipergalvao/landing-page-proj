@@ -1,0 +1,255 @@
+/* styles.css */
+
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Estilos para cabeçalho hero */
+.hero {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-radius: 10px 10px 0 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px; /* Adicione um espaço menor na parte inferior do título */
+}
+
+/* Estilos para o cabeçalho fixo */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    z-index: 999;
+}
+
+.home-button {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+/* Estilos para o conteúdo principal */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 100px; /* Espaçamento para evitar sobreposição com o título fixo */
+}
+
+/* Estilos para seções */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza horizontalmente o conteúdo dentro das seções */
+}
+
+.section h2 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para lista de vantagens */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+ul li:before {
+    content: '\2022';
+    color: #007BFF;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+ul li p {
+    margin: 0;
+    flex-grow: 1; /* Faz o texto ocupar o espaço restante horizontalmente */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto */
+}
+
+/* Estilos para seção "cta" */
+.cta {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center; /* Centraliza horizontalmente o conteúdo dentro da seção */
+    margin-top: 30px; /* Espaçamento entre as seções */
+}
+
+.cta h2 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o botão dentro da seção "cta" */
+.cta .btn-cta {
+    display: inline-block;
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta .btn-cta:hover {
+    background-color: #ff343a;
+}
+
+
+/* Estilos para botão CTA */
+.btn-cta {
+    display: inline-block;
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #ff343a;
+}
+
+/* Estilos para o botão Home */
+.btn-home {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn-home i {
+    margin-right: 5px;
+}
+
+/* Estilos para o formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="date"] {
+    width: 30%; /* Reduz o tamanho do campo da data para metade do tamanho padrão */
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.thank-you-page {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.thank-you-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
